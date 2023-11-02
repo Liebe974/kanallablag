@@ -11,7 +11,7 @@ const displayBlagues = (blaguesData) => {
        container.innerHTML = `
        <div class="card">
        <h3>${blablagues.text_head}</h3>
-       <p>${blablagues.text}</p>
+       <p>${blablagues.text === '' ? blablagues.text_hidden : blablagues.text}</p>
        <img src="${blablagues.image}">
        </div>`;
     }
