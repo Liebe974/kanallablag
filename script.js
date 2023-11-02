@@ -1,6 +1,6 @@
 const container = document.querySelector(".container");
 async function fetchBlagues() {
-    const request = await fetch("https://api.blablagues.net/?rub=blagues,videos,pepites,images");
+    const request = await fetch("https://api.blablagues.net/?rub=blagues");
     const response = await request.json();
     
     displayBlagues(response.data);
